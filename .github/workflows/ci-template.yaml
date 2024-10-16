@@ -6,8 +6,7 @@ on:
 jobs:
   validate:
     name: Validate Terraform
-    runs-on:
-      self-hosted
+    runs-on: ubuntu-latest
     environment: alz-dev-plan
     steps:
       - name: Checkout Code
