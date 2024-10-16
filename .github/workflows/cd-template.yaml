@@ -11,8 +11,7 @@ on:
 jobs:
   plan:
     name: Plan with Terraform
-    runs-on:
-      self-hosted
+    runs-on: ubuntu-latest
     concurrency: dev-tfstate
     environment: alz-dev-plan
     permissions:
