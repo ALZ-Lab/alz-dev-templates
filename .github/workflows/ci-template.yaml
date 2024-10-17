@@ -29,8 +29,7 @@ jobs:
   plan:
     name: Validate Terraform Plan
     needs: validate
-    runs-on:
-      self-hosted
+    runs-on: ubuntu-latest
     concurrency: dev-tfstate
     environment: alz-dev-plan
     permissions:
