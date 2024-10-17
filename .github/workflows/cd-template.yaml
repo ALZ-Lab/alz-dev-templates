@@ -66,8 +66,7 @@ jobs:
   apply:
     needs: plan
     name: Apply with Terraform
-    runs-on:
-      self-hosted
+    runs-on: ubuntu-latest
     concurrency: dev-tfstate
     environment: alz-dev-apply
     permissions:
